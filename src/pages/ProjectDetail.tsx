@@ -117,7 +117,11 @@ const ProjectDetail = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <Button
+
+          { project.frontendRepo && project.backendRepo &&
+
+            <>
+            <Button
             size="lg"
             onClick={() => window.open(project.frontendRepo, '_blank')}
             className="flex-1 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
@@ -125,6 +129,7 @@ const ProjectDetail = () => {
             <Github className="mr-2 w-5 h-5" />
             Frontend Repository
           </Button>
+
           <Button
             size="lg"
             variant="outline"
@@ -134,6 +139,22 @@ const ProjectDetail = () => {
             <Github className="mr-2 w-5 h-5" />
             Backend Repository
           </Button>
+            </>            
+          }
+
+          { project.frontendRepo && !project.backendRepo &&
+            <Button
+            size="lg"
+            variant="outline"
+            onClick={() => window.open(project.frontendRepo, '_blank')}
+            className="flex-1 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
+          >
+            <Github className="mr-2 w-5 h-5" />
+            Project Repository
+          </Button>
+          }
+          
+          
         </motion.div>
 
         {/* Additional Info */}

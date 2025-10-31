@@ -38,8 +38,8 @@ const projects: Project[] = [
 
       The project is built using Next.js for frontend performance and scalability, PostgreSQL with Drizzle ORM for robust data management, and styled with Shadcn UI and DaisyUI for a modern and clean interface. It also incorporates authentication, role-based access, and subscription-based pricing tiers, delivering a professional SaaS experience from end to end.
     `,
-    frontendRepo: 'https://github.com/muneeb/formnexus-frontend',
-    backendRepo: 'https://github.com/muneeb/formnexus-backend',
+    frontendRepo: 'https://github.com/muneebsafdar/Formnexus',
+    backendRepo: '',
     createdDate: 'January 2025',
   },
   {
@@ -53,8 +53,8 @@ const projects: Project[] = [
 
       The system focuses on usability, security, and automation, replacing manual record-keeping with a modern web-based approach. Its backend ensures secure and structured data flow through MongoDB and Express, while React offers a seamless frontend interface. This project demonstrates scalable architecture and real-world usability for large institutions.
     `,
-    frontendRepo: 'https://github.com/muneeb/university-frontend',
-    backendRepo: 'https://github.com/muneeb/university-backend',
+    frontendRepo: 'https://github.com/muneebsafdar/universityFrontent',
+    backendRepo: 'https://github.com/muneebsafdar/universityBackend',
     createdDate: 'June 2024',
   },
   {
@@ -68,8 +68,8 @@ const projects: Project[] = [
 
       Built using the MERN stack, the application demonstrates strong backend logic, dynamic routing, and secure authentication. Its clean and intuitive UI enhances user interaction, while MongoDB ensures smooth data handling. This project showcases practical implementation of CRUD operations and database-driven user experiences.
     `,
-    frontendRepo: 'https://github.com/muneeb/library-frontend',
-    backendRepo: 'https://github.com/muneeb/library-backend',
+    frontendRepo: 'https://github.com/muneebsafdar/LibraryManagementSystem',
+    backendRepo: '',
     createdDate: 'August 2024',
   },
   {
@@ -83,7 +83,7 @@ const projects: Project[] = [
 
       Built entirely in React with Redux for state management, the app ensures consistent performance and efficient data flow. TailwindCSS adds a modern visual appeal with clean, flexible styling. This project demonstrates strong API integration, front-end optimization, and user-centric design principles for a rich UI experience.
     `,
-    frontendRepo: 'https://github.com/muneeb/movie-showcase',
+    frontendRepo: 'https://github.com/muneebsafdar/MovieShowCase',
     backendRepo: '',
     createdDate: 'October 2024',
   },
@@ -152,20 +152,12 @@ const projects: Project[] = [
 
                     <div className="flex gap-3">
                       <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                      >
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </Button>
-                      <Button
                         size="sm"
                         onClick={() => handleProjectClick(project)}
                         className="flex-1 bg-gradient-to-r from-primary to-secondary hover:opacity-90"
                       >
                         <ExternalLink size={16} className="mr-2" />
-                        Demo
+                        View Details
                       </Button>
                     </div>
                   </div>
