@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+@layer base {
+  :root {
+    /* Dark portfolio theme with purple/blue gradients */
+    --background: 265 100% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 265 50% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 265 50% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 270 100% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-glow: 280 100% 75%;
+    
+    --secondary: 200 100% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 265 30% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 265 30% 18%;
+    --input: 265 30% 18%;
+    --ring: 270 100% 65%;
+
+    --radius: 0.75rem;
+    
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(270 100% 65%), hsl(280 100% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(200 100% 60%), hsl(180 100% 50%));
+    --gradient-hero: radial-gradient(ellipse at top, hsl(270 100% 20% / 0.3), transparent);
+    --gradient-glow: radial-gradient(circle at center, hsl(270 100% 65% / 0.2), transparent);
+    
+    /* Shadows with glow */
+    --shadow-glow: 0 0 40px hsl(270 100% 65% / 0.3);
+    --shadow-strong: 0 20px 60px hsl(270 100% 20% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: radial-gradient(ellipse at top, hsl(265 100% 8%), hsl(265 100% 3%));
+    min-height: 100vh;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(270 100% 65%), hsl(280 100% 75%));
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, hsl(270 100% 70%), hsl(280 100% 80%));
+  }
+}
+
