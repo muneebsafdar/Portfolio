@@ -61,13 +61,9 @@ const About = () => {
             className="space-y-6"
           >
           <div className="prose prose-invert max-w-none">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground text-justify leading-relaxed">
               Hi! I'm Muneeb ur Rehman, a passionate Software Engineer and Full-Stack Developer focused on creating dynamic and high-performance web and mobile apps. I turn ideas into smooth, functional, and engaging digital experiences.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
               Skilled in React, Next.js, Node.js, Express, MongoDB, and React Native, I build end-to-end solutions that are fast, secure, and scalable — blending design and engineering for a seamless user experience.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
               I love exploring new technologies and refining workflows to deliver efficient, modern, and creative software solutions.
             </p>
           </div>

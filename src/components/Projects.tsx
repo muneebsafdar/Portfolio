@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'FormNexus',
-    description: 'AI-powered form builder using Gemini API',
+    description: 'AI-powered form builder using Gemini API ',
     image: formnexus,
     tech: ['Next.js', 'PostgreSQL', 'Shadcn UI', 'DaisyUI'],
     detailedDescription: `
@@ -100,7 +100,7 @@ const projects: Project[] = [
       The app supports full authentication — users can register, log in, and manage their own uploads. With backend deployed on Render and frontend hosted on Netlify, the project demonstrates secure API integration, environment variable management, and real-world deployment workflow.
     `,
     frontendRepo: 'https://github.com/muneebsafdar/imageSaverFrontend',
-    backendRepo: 'https://github.com/muneebsafdar/imageSaverBackend',
+    backendRepo: 'https://github.com/muneebsafdar/image-saver-backend',
     createdDate: 'October 2025',
   },
 ];
@@ -137,7 +137,7 @@ const projects: Project[] = [
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="flex-shrink-0 w-[230px] sm:w-[300px] md:w-[360px] lg:w-[400px] snap-start"
               >
-                <div className="card-glass rounded-xl sm:rounded-2xl overflow-hidden group hover:scale-105 transition-transform duration-300 h-full shadow-[0_4px_20px_rgba(255,255,255,0.1)] hover:shadow-[0_6px_25px_rgba(255,255,255,0.2)]">
+                <div className="card-glass rounded-xl sm:rounded-2xl overflow-hidden group hover:scale-105 transition-transform duration-300 h-full shadow-[0_4px_20px_rgba(255,255,255,0.1)] hover:shadow-[0_6px_25px_rgba(255,255,255,0.2)] flex flex-col">
                   <div className="relative overflow-hidden h-44 sm:h-52 md:h-60">
                     <img
                       src={project.image}
@@ -147,7 +147,7 @@ const projects: Project[] = [
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
                   </div>
 
-                  <div className="p-3 sm:p-5">
+                  <div className="p-3 sm:p-5 flex flex-col flex-grow">
                     <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-foreground">
                       {project.title}
                     </h3>
@@ -166,7 +166,7 @@ const projects: Project[] = [
                       ))}
                     </div>
 
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 mt-auto">
                       <Button
                         size="sm"
                         onClick={() => handleProjectClick(project)}
