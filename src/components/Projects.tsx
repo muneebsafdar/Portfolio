@@ -8,6 +8,7 @@ import university from '@/assets/university.jpg';
 import formnexus from '@/assets/formnexus.png';
 import movie from '@/assets/movie.png';
 import library from '@/assets/library.jpeg';
+import imagesaver from '@/assets/imagesaver.jpg'
 
 interface Project {
   id: number;
@@ -27,67 +28,83 @@ const Projects = () => {
   const navigate = useNavigate();
 
 const projects: Project[] = [
-    {
-      id: 1,
-      title: 'FormNexus',
-      description: 'AI-powered form builder using Gemini API',
-      image: formnexus,
-      tech: ['Next.js', 'PostgreSQL', 'Shadcn UI', 'DaisyUI'],
-      detailedDescription: `
+  {
+    id: 1,
+    title: 'FormNexus',
+    description: 'AI-powered form builder using Gemini API',
+    image: formnexus,
+    tech: ['Next.js', 'PostgreSQL', 'Shadcn UI', 'DaisyUI'],
+    detailedDescription: `
       FormNexus is an AI-driven form builder that empowers users to create fully functional, responsive forms through natural language prompts. Using the Gemini API, users can describe what they need, and the system instantly generates dynamic and customizable forms with live previews. It also provides features to create, update, delete, and share forms effortlessly, making it a go-to solution for teams and individuals.
 
       The project is built using Next.js for frontend performance and scalability, PostgreSQL with Drizzle ORM for robust data management, and styled with Shadcn UI and DaisyUI for a modern and clean interface. It also incorporates authentication, role-based access, and subscription-based pricing tiers, delivering a professional SaaS experience from end to end.
     `,
-      frontendRepo: 'https://github.com/muneebsafdar/Formnexus',
-      backendRepo: '',
-      createdDate: 'January 2025',
-    },
-    {
-      id: 2,
-      title: 'University Management System',
-      description: 'End-to-end university management solution',
-      image: university,
-      tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-      detailedDescription: `
+    frontendRepo: 'https://github.com/muneebsafdar/Formnexus',
+    backendRepo: '',
+    createdDate: 'January 2025',
+  },
+  {
+    id: 2,
+    title: 'University Management System',
+    description: 'End-to-end university management solution',
+    image: university,
+    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
+    detailedDescription: `
       The University Management System is a full-scale MERN stack web application that centralizes all academic and administrative operations of a university. It provides separate roles for administrators, teachers, and students, allowing efficient handling of tasks such as course management, student enrollment, attendance tracking, and internal communication.
 
       The system focuses on usability, security, and automation, replacing manual record-keeping with a modern web-based approach. Its backend ensures secure and structured data flow through MongoDB and Express, while React offers a seamless frontend interface. This project demonstrates scalable architecture and real-world usability for large institutions.
     `,
-      frontendRepo: 'https://github.com/muneebsafdar/universityFrontent',
-      backendRepo: 'https://github.com/muneebsafdar/universityBackend',
-      createdDate: 'June 2024',
-    },
-    {
-      id: 3,
-      title: 'Library Management System',
-      description: 'Digital solution for managing library operations',
-      image: library,
-      tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-      detailedDescription: `
+    frontendRepo: 'https://github.com/muneebsafdar/universityFrontent',
+    backendRepo: 'https://github.com/muneebsafdar/universityBackend',
+    createdDate: 'June 2024',
+  },
+  {
+    id: 3,
+    title: 'Library Management System',
+    description: 'Digital solution for managing library operations',
+    image: library,
+    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
+    detailedDescription: `
       The Library Management System is a comprehensive digital platform designed to automate and manage library operations efficiently. It supports user and admin roles, allowing admins to manage book inventories, issue records, and user details, while users can browse, borrow, and return books easily. The real-time data updates ensure accuracy and transparency throughout the system.
 
       Built using the MERN stack, the application demonstrates strong backend logic, dynamic routing, and secure authentication. Its clean and intuitive UI enhances user interaction, while MongoDB ensures smooth data handling. This project showcases practical implementation of CRUD operations and database-driven user experiences.
     `,
-      frontendRepo: 'https://github.com/muneebsafdar/LibraryManagementSystem',
-      backendRepo: '',
-      createdDate: 'August 2024',
-    },
-    {
-      id: 4,
-      title: 'Movie Showcase',
-      description: 'Modern movie browsing app with infinite scroll',
-      image: movie,
-      tech: ['React', 'TMDB API', 'React Redux', 'TailwindCSS'],
-      detailedDescription: `
+    frontendRepo: 'https://github.com/muneebsafdar/LibraryManagementSystem',
+    backendRepo: '',
+    createdDate: 'August 2024',
+  },
+  {
+    id: 4,
+    title: 'Movie Showcase',
+    description: 'Modern movie browsing app with infinite scroll',
+    image: movie,
+    tech: ['React', 'TMDB API', 'React Redux', 'TailwindCSS'],
+    detailedDescription: `
       Movie Showcase is a dynamic and visually stunning movie discovery app that fetches live data from the TMDB API. Users can explore thousands of films with infinite scrolling, search functionality, and smooth animations for an engaging browsing experience. The layout is responsive and optimized for both desktop and mobile screens.
 
       Built entirely in React with Redux for state management, the app ensures consistent performance and efficient data flow. TailwindCSS adds a modern visual appeal with clean, flexible styling. This project demonstrates strong API integration, front-end optimization, and user-centric design principles for a rich UI experience.
     `,
-      frontendRepo: 'https://github.com/muneebsafdar/MovieShowCase',
-      backendRepo: '',
-      createdDate: 'October 2024',
-    },
-  ];
+    frontendRepo: 'https://github.com/muneebsafdar/MovieShowCase',
+    backendRepo: '',
+    createdDate: 'October 2024',
+  },
+  {
+    id: 5,
+    title: 'Image Saver App',
+    description: 'Cloud-based image management app with authentication',
+    image: imagesaver, 
+    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Cloudinary'],
+    detailedDescription: `
+      Image Saver is a MERN stack web application that allows users to upload, view, and delete their images securely. Integrated with Cloudinary for image storage, it provides seamless image management through a clean dashboard. 
+
+      The app supports full authentication — users can register, log in, and manage their own uploads. With backend deployed on Render and frontend hosted on Netlify, the project demonstrates secure API integration, environment variable management, and real-world deployment workflow.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/imageSaverFrontend',
+    backendRepo: 'https://github.com/muneebsafdar/imageSaverBackend',
+    createdDate: 'October 2025',
+  },
+];
+
 
   const handleProjectClick = (project: Project) => {
     navigate(`/project/${project.id}`, { state: { project } });
