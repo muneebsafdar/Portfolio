@@ -9,6 +9,7 @@ import formnexus from '@/assets/formnexus.png';
 import movie from '@/assets/movie.png';
 import library from '@/assets/library.jpeg';
 import imagesaver from '@/assets/imagesaver.jpg'
+import meetly from '@/assets/meetly.jpg'
 
 interface Project {
   id: number;
@@ -31,7 +32,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'FormNexus',
-    description: 'AI-powered form builder using Gemini API ',
+    description: 'AI-powered form builder ',
     image: formnexus,
     tech: ['Next.js', 'PostgreSQL', 'Shadcn UI', 'DaisyUI'],
     detailedDescription: `
@@ -76,7 +77,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'Movie Showcase',
-    description: 'Modern movie browsing app with infinite scroll',
+    description: 'Modern movie showcase app',
     image: movie,
     tech: ['React', 'TMDB API', 'React Redux', 'TailwindCSS'],
     detailedDescription: `
@@ -91,7 +92,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: 'Image Saver App',
-    description: 'Cloud-based image management app with authentication',
+    description: 'Cloud-based image management app',
     image: imagesaver, 
     tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Cloudinary'],
     detailedDescription: `
@@ -103,6 +104,31 @@ const projects: Project[] = [
     backendRepo: 'https://github.com/muneebsafdar/image-saver-backend',
     createdDate: 'October 2025',
   },
+  {
+  id: 6,
+  title: 'Meetly - Video Conferencing App',
+  description: 'Real-time video conferencing with Stream SDK',
+  image: meetly, 
+  tech: ['Next.js', 'Stream Video SDK', 'Clerk Auth', 'TailwindCSS', 'Shadcn UI'],
+  detailedDescription: `
+    Meetly is a fully featured real-time video conferencing application built using the Stream Video SDK. 
+    It allows users to create meetings, join meetings, and interact through high-quality video and audio 
+    with a clean, modern UI optimized for mobile and desktop.
+
+    The app includes dynamic layouts like grid view and speaker view, participant management, call controls, 
+    live device handling, and host-only meeting termination. It is fully responsive and offers a smooth 
+    experience on smaller screens with multi-user video support. Authentication is handled through Clerk, 
+    ensuring secure access control.
+
+    Developed with Next.js for performance and scalability, styled using TailwindCSS and Shadcn UI, and powered 
+    by Stream’s low-latency infrastructure, Meetly demonstrates expertise in real-time communication, 
+    WebRTC, and production-ready UI engineering.
+  `,
+  frontendRepo: 'https://github.com/muneebsafdar/LiveConferencingApp.git',
+  backendRepo: '',
+  createdDate: 'November 2025',
+}
+
 ];
 
 
@@ -142,7 +168,7 @@ const projects: Project[] = [
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
                   </div>
