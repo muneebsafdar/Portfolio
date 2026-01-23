@@ -10,6 +10,8 @@ import movie from '@/assets/movie.png';
 import library from '@/assets/library.jpeg';
 import imagesaver from '@/assets/imagesaver.jpg'
 import meetly from '@/assets/meetly.jpg'
+import linkshift from "@/assets/linkshift.png"
+import easytools from "@/assets/easytools.png"
 
 interface Project {
   id: number;
@@ -105,30 +107,46 @@ const projects: Project[] = [
     createdDate: 'October 2025',
   },
   {
-  id: 6,
-  title: 'Meetly - Video Conferencing App',
-  description: 'Real-time video conferencing with Stream SDK',
-  image: meetly, 
-  tech: ['Next.js', 'Stream Video SDK', 'Clerk Auth', 'TailwindCSS', 'Shadcn UI'],
-  detailedDescription: `
-    Meetly is a fully featured real-time video conferencing application built using the Stream Video SDK. 
-    It allows users to create meetings, join meetings, and interact through high-quality video and audio 
-    with a clean, modern UI optimized for mobile and desktop.
+    id: 6,
+    title: 'Meetly - Video Conferencing App',
+    description: 'Real-time video conferencing with Stream SDK',
+    image: meetly, 
+    tech: ['Next.js', 'Stream Video SDK', 'Clerk Auth', 'TailwindCSS', 'Shadcn UI'],
+    detailedDescription: `
+      Meetly is a fully featured real-time video conferencing application built using the Stream Video SDK. 
+      It allows users to create meetings, join meetings, and interact through high-quality video and audio 
+      with a clean, modern UI optimized for mobile and desktop.
 
-    The app includes dynamic layouts like grid view and speaker view, participant management, call controls, 
-    live device handling, and host-only meeting termination. It is fully responsive and offers a smooth 
-    experience on smaller screens with multi-user video support. Authentication is handled through Clerk, 
-    ensuring secure access control.
+      The app includes dynamic layouts like grid view and speaker view, participant management, call controls, 
+      live device handling, and host-only meeting termination. It is fully responsive and offers a smooth 
+      experience on smaller screens with multi-user video support. Authentication is handled through Clerk, 
+      ensuring secure access control.
 
-    Developed with Next.js for performance and scalability, styled using TailwindCSS and Shadcn UI, and powered 
-    by Stream’s low-latency infrastructure, Meetly demonstrates expertise in real-time communication, 
-    WebRTC, and production-ready UI engineering.
-  `,
-  frontendRepo: 'https://github.com/muneebsafdar/LiveConferencingApp.git',
-  backendRepo: '',
-  createdDate: 'November 2025',
-}
+      Developed with Next.js for performance and scalability, styled using TailwindCSS and Shadcn UI, and powered 
+      by Stream's low-latency infrastructure, Meetly demonstrates expertise in real-time communication, 
+      WebRTC, and production-ready UI engineering.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/LiveConferencingApp.git',
+    backendRepo: '',
+    createdDate: 'November 2025',
+  },
+  {
+    id: 7,
+    title: 'Link Shift',
+    description: 'URL shortener with analytics',
+    image: linkshift,
+    tech: ['React', 'TypeScript', 'Express', 'MongoDB', 'Clerk Auth'],
+    detailedDescription: `
+      Link Shift is a modern URL shortening service that allows users to create short, shareable links from long URLs. Built with a focus on simplicity and user experience, it provides secure authentication through Clerk and stores shortened URLs in MongoDB for fast retrieval and analytics.
 
+      The frontend is developed using React with TypeScript and Vite for optimal performance and type safety, styled with TailwindCSS for a clean, responsive interface. The backend uses Express with TypeScript and Mongoose for robust data handling and API endpoints. This project demonstrates full-stack TypeScript development, secure authentication integration, and efficient URL redirection logic.
+
+      Link Shift showcases practical implementation of RESTful API design, webhook handling with Svix, and seamless deployment workflows with separate frontend and backend repositories.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/link-shift',
+    backendRepo: 'https://github.com/muneebsafdar/link-shift-backend',
+    createdDate: 'January 2025',
+  },
 ];
 
 
