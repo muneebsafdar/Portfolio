@@ -147,6 +147,23 @@ const projects: Project[] = [
     backendRepo: 'https://github.com/muneebsafdar/link-shift-backend',
     createdDate: 'January 2025',
   },
+  {
+    id: 8,
+    title: 'Easy Tools',
+    description: 'AI-powered productivity toolkit',
+    image: easytools,
+    tech: ['Next.js', 'PostgreSQL', 'Gemini AI', 'Drizzle ORM', 'Clerk Auth'],
+    detailedDescription: `
+      Easy Tools is a comprehensive productivity platform that brings together multiple AI-powered utilities in one place. Leveraging the Gemini API, it provides intelligent tools for various tasks including content generation, text analysis, code assistance, and more. Each tool is designed to streamline workflows and boost productivity through natural language interactions.
+
+      Built with Next.js for optimal performance and SEO, the application uses PostgreSQL with Drizzle ORM for reliable data persistence and user history tracking. Clerk handles secure authentication, while Supabase provides additional backend services. The UI features smooth animations with Framer Motion and includes a rich text editor powered by Toast UI for enhanced content creation.
+
+      The project demonstrates advanced integration of AI APIs, structured database design, and a modular architecture that makes adding new tools seamless. With real-time syntax highlighting and responsive design, Easy Tools showcases modern full-stack development practices and AI-driven user experiences.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/easy-tools',
+    backendRepo: '',
+    createdDate: 'January 2025',
+  },
 ];
 
 
