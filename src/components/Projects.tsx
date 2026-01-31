@@ -11,7 +11,7 @@ import library from '@/assets/library.jpeg';
 import imagesaver from '@/assets/imagesaver.jpg'
 import meetly from '@/assets/meetly.jpg'
 import linkshift from "@/assets/linkshift.png"
-import easytools from "@/assets/easytools.png"
+import easytools from "@/assets/easytoools.png"
 
 interface Project {
   id: number;
@@ -33,8 +33,8 @@ const Projects = () => {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'FormNexus',
-    description: 'AI-powered form builder ',
+    title: 'FormNexus - AI Formm Builder',
+    description: 'AI-powered form builder using Gemini Api',
     image: formnexus,
     tech: ['Next.js', 'PostgreSQL', 'Shadcn UI', 'DaisyUI'],
     detailedDescription: `
@@ -48,66 +48,6 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'University Management System',
-    description: 'End-to-end university management solution',
-    image: university,
-    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-    detailedDescription: `
-      The University Management System is a full-scale MERN stack web application that centralizes all academic and administrative operations of a university. It provides separate roles for administrators, teachers, and students, allowing efficient handling of tasks such as course management, student enrollment, attendance tracking, and internal communication.
-
-      The system focuses on usability, security, and automation, replacing manual record-keeping with a modern web-based approach. Its backend ensures secure and structured data flow through MongoDB and Express, while React offers a seamless frontend interface. This project demonstrates scalable architecture and real-world usability for large institutions.
-    `,
-    frontendRepo: 'https://github.com/muneebsafdar/universityFrontent',
-    backendRepo: 'https://github.com/muneebsafdar/universityBackend',
-    createdDate: 'June 2024',
-  },
-  {
-    id: 3,
-    title: 'Library Management System',
-    description: 'Digital solution for managing library operations',
-    image: library,
-    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
-    detailedDescription: `
-      The Library Management System is a comprehensive digital platform designed to automate and manage library operations efficiently. It supports user and admin roles, allowing admins to manage book inventories, issue records, and user details, while users can browse, borrow, and return books easily. The real-time data updates ensure accuracy and transparency throughout the system.
-
-      Built using the MERN stack, the application demonstrates strong backend logic, dynamic routing, and secure authentication. Its clean and intuitive UI enhances user interaction, while MongoDB ensures smooth data handling. This project showcases practical implementation of CRUD operations and database-driven user experiences.
-    `,
-    frontendRepo: 'https://github.com/muneebsafdar/LibraryManagementSystem',
-    backendRepo: '',
-    createdDate: 'August 2024',
-  },
-  {
-    id: 4,
-    title: 'Movie Showcase',
-    description: 'Modern movie showcase app',
-    image: movie,
-    tech: ['React', 'TMDB API', 'React Redux', 'TailwindCSS'],
-    detailedDescription: `
-      Movie Showcase is a dynamic and visually stunning movie discovery app that fetches live data from the TMDB API. Users can explore thousands of films with infinite scrolling, search functionality, and smooth animations for an engaging browsing experience. The layout is responsive and optimized for both desktop and mobile screens.
-
-      Built entirely in React with Redux for state management, the app ensures consistent performance and efficient data flow. TailwindCSS adds a modern visual appeal with clean, flexible styling. This project demonstrates strong API integration, front-end optimization, and user-centric design principles for a rich UI experience.
-    `,
-    frontendRepo: 'https://github.com/muneebsafdar/MovieShowCase',
-    backendRepo: '',
-    createdDate: 'October 2024',
-  },
-  {
-    id: 5,
-    title: 'Image Saver App',
-    description: 'Cloud-based image management app',
-    image: imagesaver, 
-    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Cloudinary'],
-    detailedDescription: `
-      Image Saver is a MERN stack web application that allows users to upload, view, and delete their images securely. Integrated with Cloudinary for image storage, it provides seamless image management through a clean dashboard. 
-
-      The app supports full authentication — users can register, log in, and manage their own uploads. With backend deployed on Render and frontend hosted on Netlify, the project demonstrates secure API integration, environment variable management, and real-world deployment workflow.
-    `,
-    frontendRepo: 'https://github.com/muneebsafdar/imageSaverFrontend',
-    backendRepo: 'https://github.com/muneebsafdar/image-saver-backend',
-    createdDate: 'October 2025',
-  },
-  {
-    id: 6,
     title: 'Meetly - Video Conferencing App',
     description: 'Real-time video conferencing with Stream SDK',
     image: meetly, 
@@ -131,8 +71,8 @@ const projects: Project[] = [
     createdDate: 'November 2025',
   },
   {
-    id: 7,
-    title: 'Link Shift',
+    id: 3,
+    title: 'Link Shift - Link Shortner',
     description: 'URL shortener with analytics',
     image: linkshift,
     tech: ['React', 'TypeScript', 'Express', 'MongoDB', 'Clerk Auth'],
@@ -143,13 +83,13 @@ const projects: Project[] = [
 
       Link Shift showcases practical implementation of RESTful API design, webhook handling with Svix, and seamless deployment workflows with separate frontend and backend repositories.
     `,
-    frontendRepo: 'https://github.com/muneebsafdar/link-shift',
-    backendRepo: 'https://github.com/muneebsafdar/link-shift-backend',
+    frontendRepo: 'https://github.com/muneebsafdar/Link-shift-frontend.git',
+    backendRepo: 'https://github.com/muneebsafdar/Link-shift-Backend.git',
     createdDate: 'January 2025',
   },
   {
-    id: 8,
-    title: 'Easy Tools',
+    id: 4,
+    title: 'Easy Tools - Small AI Tools',
     description: 'AI-powered productivity toolkit',
     image: easytools,
     tech: ['Next.js', 'PostgreSQL', 'Gemini AI', 'Drizzle ORM', 'Clerk Auth'],
@@ -160,10 +100,73 @@ const projects: Project[] = [
 
       The project demonstrates advanced integration of AI APIs, structured database design, and a modular architecture that makes adding new tools seamless. With real-time syntax highlighting and responsive design, Easy Tools showcases modern full-stack development practices and AI-driven user experiences.
     `,
-    frontendRepo: 'https://github.com/muneebsafdar/easy-tools',
+    frontendRepo: 'https://github.com/muneebsafdar/Ai-Content-Gen-App.git',
     backendRepo: '',
     createdDate: 'January 2025',
   },
+
+  {
+    id: 8,
+    title: 'Image Saver App',
+    description: 'Cloud-based image management app',
+    image: imagesaver, 
+    tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Cloudinary'],
+    detailedDescription: `
+      Image Saver is a MERN stack web application that allows users to upload, view, and delete their images securely. Integrated with Cloudinary for image storage, it provides seamless image management through a clean dashboard. 
+
+      The app supports full authentication — users can register, log in, and manage their own uploads. With backend deployed on Render and frontend hosted on Netlify, the project demonstrates secure API integration, environment variable management, and real-world deployment workflow.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/imageSaverFrontend',
+    backendRepo: 'https://github.com/muneebsafdar/image-saver-backend',
+    createdDate: 'October 2025',
+  },
+
+  {
+    id: 5,
+    title: 'University Management System',
+    description: 'End-to-end university management solution',
+    image: university,
+    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
+    detailedDescription: `
+      The University Management System is a full-scale MERN stack web application that centralizes all academic and administrative operations of a university. It provides separate roles for administrators, teachers, and students, allowing efficient handling of tasks such as course management, student enrollment, attendance tracking, and internal communication.
+
+      The system focuses on usability, security, and automation, replacing manual record-keeping with a modern web-based approach. Its backend ensures secure and structured data flow through MongoDB and Express, while React offers a seamless frontend interface. This project demonstrates scalable architecture and real-world usability for large institutions.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/universityFrontent',
+    backendRepo: 'https://github.com/muneebsafdar/universityBackend',
+    createdDate: 'June 2024',
+  },
+  {
+    id: 6,
+    title: 'Library Management System',
+    description: 'Digital solution for managing library operations',
+    image: library,
+    tech: ['MongoDB', 'Express', 'React', 'Node.js'],
+    detailedDescription: `
+      The Library Management System is a comprehensive digital platform designed to automate and manage library operations efficiently. It supports user and admin roles, allowing admins to manage book inventories, issue records, and user details, while users can browse, borrow, and return books easily. The real-time data updates ensure accuracy and transparency throughout the system.
+
+      Built using the MERN stack, the application demonstrates strong backend logic, dynamic routing, and secure authentication. Its clean and intuitive UI enhances user interaction, while MongoDB ensures smooth data handling. This project showcases practical implementation of CRUD operations and database-driven user experiences.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/LibraryManagementSystem',
+    backendRepo: '',
+    createdDate: 'August 2024',
+  },
+  {
+    id: 7,
+    title: 'Movie Coco - Movie Showcase App',
+    description: 'Modern movie showcase app using TMDB Api',
+    image: movie,
+    tech: ['React', 'TMDB API', 'React Redux', 'TailwindCSS'],
+    detailedDescription: `
+      Movie Showcase is a dynamic and visually stunning movie discovery app that fetches live data from the TMDB API. Users can explore thousands of films with infinite scrolling, search functionality, and smooth animations for an engaging browsing experience. The layout is responsive and optimized for both desktop and mobile screens.
+
+      Built entirely in React with Redux for state management, the app ensures consistent performance and efficient data flow. TailwindCSS adds a modern visual appeal with clean, flexible styling. This project demonstrates strong API integration, front-end optimization, and user-centric design principles for a rich UI experience.
+    `,
+    frontendRepo: 'https://github.com/muneebsafdar/MovieShowCase',
+    backendRepo: '',
+    createdDate: 'October 2024',
+  },
+  
 ];
 
 
@@ -216,7 +219,7 @@ const projects: Project[] = [
                       {project.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+                    {/* <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                       {project.tech.map((tech) => (
                         <span
                           key={tech}
@@ -225,7 +228,7 @@ const projects: Project[] = [
                           {tech}
                         </span>
                       ))}
-                    </div>
+                    </div> */}
 
                     <div className="flex gap-3 mt-auto">
                       <Button

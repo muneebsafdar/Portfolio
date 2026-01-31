@@ -49,22 +49,8 @@ const ProjectDetail = () => {
       </div>
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
-        {/* Project Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative mb-12 rounded-2xl overflow-hidden"
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-2xl" />
-          <img
-            src={project.image}
-            alt={project.title}
-            className="relative w-full h-[400px] md:h-[500px] object-cover rounded-2xl border border-border"
-          />
-        </motion.div>
 
-        {/* Project Header */}
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -89,6 +75,23 @@ const ProjectDetail = () => {
             ))}
           </div>
         </motion.div>
+        {/* Project Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="relative mb-12 rounded-2xl overflow-hidden"
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-2xl" />
+          <img
+            src={project.image}
+            alt={project.title}
+            className="relative w-full h-[400px] md:h-[500px] object-fit rounded-2xl border border-border"
+          />
+        </motion.div>
+
+        {/* Project Header */}
+        
 
         {/* Project Description */}
         <motion.div
