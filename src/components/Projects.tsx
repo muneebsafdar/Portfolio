@@ -192,17 +192,17 @@ const projects: Project[] = [
         </motion.div>
 
         <div className="relative">
-          <div className="no-scrollbar flex overflow-x-auto gap-5 sm:gap-7 pb-6 sm:pb-8 scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent snap-x snap-mandatory">
+          <div className="no-scrollbar w-full flex overflow-x-auto gap-5 sm:gap-7 pb-6 sm:pb-8 scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent snap-x snap-mandatory">
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
                 initial={{ opacity: 0, x: 100 }}
                 animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                className="flex-shrink-0 w-[230px] sm:w-[300px] md:w-[360px] lg:w-[400px] snap-start"
+                className="flex-shrink-0   w-[300px] md:w-[400px] lg:w-[460px] snap-start"
               >
-                <div className="card-glass rounded-xl sm:rounded-2xl overflow-hidden group hover:scale-105 transition-transform duration-300 h-full shadow-[0_4px_20px_rgba(255,255,255,0.1)] hover:shadow-[0_6px_25px_rgba(255,255,255,0.2)] flex flex-col">
-                  <div className="relative overflow-hidden h-44 sm:h-52 md:h-60">
+                <div className="card-glass sm:w-[80%] md:w-full rounded-xl overflow-hidden group hover:scale-105 transition-transform duration-300 h-full shadow-[0_4px_20px_rgba(255,255,255,0.1)] hover:shadow-[0_6px_25px_rgba(255,255,255,0.2)] flex flex-col">
+                  <div className="relative overflow-hidden h-44 sm:h-48  md:h-52">
                     <img
                       src={project.image}
                       alt={project.title}
